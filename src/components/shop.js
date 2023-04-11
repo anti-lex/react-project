@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Image from '../images/destinybook.png'
 import Image2 from '../images/one.png'
 const Shop = () => {
