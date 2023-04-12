@@ -1,13 +1,32 @@
 import Navigation from "./navigation";
 import React from 'react'; 
-import { BsInstagram } from "react-icons/bs";
-import { RiFacebookBoxFill } from "react-icons/ri"
+import { Icon } from "@iconify/react";
 const Footer = () => {
     return (
         <div className="FooterContainer">
-            <RiFacebookBoxFill/>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener">
+            <Icon
+                icon="carbon:logo-facebook"
+                width={46}
+                height={46}
+            />
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener">
+            <Icon
+                icon="jam:instagram"
+                width={46}
+                height={46}
+            />
+            </a>
+            <a href="https://twitter.com/home" target="_blank" rel="noopener">
+            <Icon
+                icon="ant-design:twitter-square-filled"
+                width={46}
+                height={46}
+            />
+            </a>
             <Navigation/>
-            <BsInstagram/>
+            
         </div>
     )
 }
