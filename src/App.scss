@@ -3,17 +3,31 @@
     text-decoration: none !important;
     font-family:'Inter';
     font-size: 24px;
-    text-align: center;
+    text-align: left;
     padding-top: 2%;
     padding-bottom: 2%;
     box-shadow: 2px 11px 2px rgba(0, 0, 0, 0.25);
+
     a{
         color: black;
         display: inline-flex;
         padding-left: 3%;
+        padding-top: 3%;
+
+    }
+    img{
+        display: inline-flex;
+        height: 80px;
+        padding-left: 6%;
     }
 }
+.NavGrid{
+    display: grid;
+    grid-template-columns: 7% 93% ;
+    align-content: center;
 
+ 
+}
 .FooterContainer {
     grid-area: footer;
     text-decoration: none !important;
@@ -108,6 +122,7 @@
         'BotLeft BotMid BotRight';
     img{
         width: 60%;
+        cursor: pointer;
     }
 }
 
@@ -291,4 +306,35 @@
 
 .Icons{
     height: 32px;
+}
+
+.ListGrid{
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 5%;
+    p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    img{
+        width: 80%;
+    }
+
+    li{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    h1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+    }
 }

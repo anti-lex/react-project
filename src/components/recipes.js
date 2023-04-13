@@ -4,12 +4,18 @@ import Image3 from '../images/pasta.jpg'
 import Image4 from '../images/ramen3.png'
 import Image5 from '../images/coleslaw3.png'
 import Image6 from '../images/muffin3.png'
+import { useNavigate } from 'react-router-dom'
 const Recipes = () => {
+    const navigate = useNavigate();
     return(
+        
         <>
         <div className="Recipes">
             <div className="topLeft">
-                <img src={Image} alt="tacos"></img>
+                <img src={Image} alt="tacos"onClick={(e) => {
+                e.preventDefault();
+                navigate("/tacos");
+                }}></img>
                 <h3>Chicken Tacos</h3>
                 <p>Difficulty: Medium</p>
                 <p>Prep Time: 1.5 Hours</p>

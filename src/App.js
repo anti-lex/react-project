@@ -9,6 +9,7 @@ import Recipes from './components/recipes';
 import Contact from './components/contact';
 import About from './components/about';
 import Footer from './components/footer'
+import Taco from './components/taco';
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
         <Route path="shop" element={<Shop/>}/>
         <Route path="contact" element={<Contact/>}/>
         <Route path="about" element={<About/>}/>
+        <Route path="tacos" element={<Taco/>}/>
       </Routes>
       <Footer/>
     </div>
