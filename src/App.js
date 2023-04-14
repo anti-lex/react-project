@@ -10,6 +10,11 @@ import Contact from './components/contact';
 import About from './components/about';
 import Footer from './components/footer'
 import Taco from './components/taco';
+import Beef from './components/beef';
+import Muffin from './components/muffin';
+import Pasta from './components/pasta';
+import Ramen from './components/ramen';
+import Slaw from './components/coleslaw';
 function App() {
   return (
     <div className="App">
@@ -21,6 +26,11 @@ function App() {
         <Route path="contact" element={<Contact/>}/>
         <Route path="about" element={<About/>}/>
         <Route path="tacos" element={<Taco/>}/>
+        <Route path="beef" element={<Beef/>}/>
+        <Route path="muffin" element={<Muffin/>}/>
+        <Route path="pasta" element={<Pasta/>}/>
+        <Route path="ramen" element={<Ramen/>}/>
+        <Route path="coleslaw" element={<Slaw/>}/>
       </Routes>
       <Footer/>
     </div>

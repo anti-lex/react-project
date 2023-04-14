@@ -23,7 +23,10 @@ const Recipes = () => {
             </div>
 
             <div className="topMid">
-            <img src={Image2} alt="beef"></img>
+            <img src={Image2} alt="beef"onClick={(e) => {
+                e.preventDefault();
+                navigate("/beef");
+                }}></img>
             <h3>Beef Broccoli Bowl</h3>
             <p>Difficulty: Easy</p>
             <p>Prep Time: 1.5 Hours</p>
@@ -31,7 +34,10 @@ const Recipes = () => {
             </div>
 
             <div className="topRight">
-                <img src={Image3} alt="pasta"></img>
+                <img src={Image3} alt="pasta" onClick={(e) => {
+                e.preventDefault();
+                navigate("/pasta");
+                }}></img>
                 <h3>Classic Spaghetti</h3>
                 <p>Difficulty: Easy</p>
                 <p>Prep Time: 0.5 Hours</p>
@@ -39,7 +45,10 @@ const Recipes = () => {
             </div>
 
             <div className="botLeft">
-                <img src={Image4} alt="ramen"></img>
+                <img src={Image4} alt="ramen" onClick={(e) => {
+                e.preventDefault();
+                navigate("/ramen");
+                }}></img>
                 <h3>Spicy Ramen</h3>
                 <p>Difficulty: Medium</p>
                 <p>Prep Time: 1.5 Hours</p>
@@ -47,7 +56,11 @@ const Recipes = () => {
             </div>
 
             <div className="botMid">
-            <img src={Image5} alt="slaw"></img>
+            <img src={Image5} alt="slaw"
+            onClick={(e) => {
+                e.preventDefault();
+                navigate("/coleslaw");
+                }}></img>
             <h3>Coleslaw</h3>
             <p>Difficulty: Hard</p>
             <p>Prep Time: 10 Hours</p>
@@ -55,7 +68,10 @@ const Recipes = () => {
             </div>
 
             <div className="botRight">
-                <img src={Image6} alt="muffin"></img>
+                <img src={Image6} alt="muffin" onClick={(e) => {
+                e.preventDefault();
+                navigate("/muffin");
+                }}></img>
                 <h3>Blueberry Muffins</h3>
                 <p>Difficulty: Easy</p>
                 <p>Prep Time: 15 Hours</p>
