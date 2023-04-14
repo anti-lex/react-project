@@ -22,9 +22,19 @@ const Home = () => {
         </div>
 
         <div className="bottom">
-            <img src={Image} alt="tacos"></img>
-            <img src={Image2} alt="beef"></img>
-            <img src={Image3} alt="pasta"></img>
+            <img src={Image} alt="tacos"
+            onClick={(e) => {
+                e.preventDefault();
+                navigate("/tacos");
+                }}></img>
+            <img src={Image2} alt="beef"onClick={(e) => {
+                e.preventDefault();
+                navigate("/beef");
+                }}></img>
+            <img src={Image3} alt="pasta"onClick={(e) => {
+                e.preventDefault();
+                navigate("/pasta");
+                }}></img>
         </div>
         </>
     )

@@ -1,7 +1,9 @@
 import React from 'react'
 import Image from '../images/destinybook.png'
 import Image2 from '../images/one.png'
+import { useNavigate } from "react-router-dom";
 const Shop = () => {
+    const navigate = useNavigate();
     return (
         <>
         <div className = "recipeGrid">
@@ -14,7 +16,10 @@ const Shop = () => {
             <h2>$34.67</h2>
             <p>Hardcover</p>
             <p>6 in stock now!</p>
-            <button>Buy now!</button>
+            <button onClick={(e) => {
+                e.preventDefault();
+                navigate("/checkout");
+                }}>Buy now!</button>
             </div>
             <div className="topImage">
                 <img src={Image2} alt="book2"></img>
@@ -25,7 +30,10 @@ const Shop = () => {
             <h2>$27.00</h2>
             <p>Hardcover</p>
             <p>18 in stock now!</p>
-            <button>Buy now!</button>
+            <button onClick={(e) => {
+                e.preventDefault();
+                navigate("/checkout");
+                }}>Buy now!</button>
             </div>
         </div>
         </>

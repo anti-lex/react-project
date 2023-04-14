@@ -15,6 +15,7 @@ import Muffin from './components/muffin';
 import Pasta from './components/pasta';
 import Ramen from './components/ramen';
 import Slaw from './components/coleslaw';
+import Checkout from './components/checkout';
 function App() {
   return (
     <div className="App">
@@ -31,6 +32,7 @@ function App() {
         <Route path="pasta" element={<Pasta/>}/>
         <Route path="ramen" element={<Ramen/>}/>
         <Route path="coleslaw" element={<Slaw/>}/>
+        <Route path="checkout" element={<Checkout/>}/>
       </Routes>
       <Footer/>
     </div>

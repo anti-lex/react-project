@@ -7,7 +7,7 @@ const Muffin = () => {
         <div className="BeefImage">
             <img src={Image} alt="Beef"></img>
         </div>
-        <h1>Beef and Broccoli Bowl</h1>
+        <h1>Blueberry Muffin's</h1>
         <h2>Ingredients</h2>
         <ul>
             <li>1 ½ cups all-purpose flour</li>

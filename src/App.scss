@@ -338,3 +338,48 @@
         font-size: 64px;
     }
 }
+
+.Checkout{
+    margin-left: 5%;
+    display: grid;
+    label{
+        margin-top: 5%;
+        font-weight: bold;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 2%;
+    }
+    grid-template-columns: 30% 30% 40%;
+    input {
+        width: 100%;
+        padding: 0.3rem 0 0.3rem 0;
+        margin-bottom: 5%;
+        margin-top: 2%;
+      }
+
+    button {
+        background-color: black;
+
+        border: none;
+        padding: 0.8rem 0 0.8rem 0;
+        color: #fff;
+        margin-left: 6vw;
+        margin-bottom: 5%;
+        font-size: 18px;
+        text-decoration: none;
+
+        cursor: pointer;
+
+        width: 50%;
+        text-align: center;
+    }
+
+    h1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+    }
+}
