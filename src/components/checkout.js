@@ -1,4 +1,4 @@
-import { auth, app2 } from '../api/firebaseConfig'
+import { app2 } from '../api/firebaseConfig'
 import React, { useRef, useState } from 'react';
 import { getFirestore } from "firebase/firestore";
 import { doc, setDoc } from "firebase/firestore"; 
